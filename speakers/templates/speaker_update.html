@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Update {{speaker.name}}</title>
+    </head>
+    <body>
+        <div class="speaker_container">
+            <a class="speaker">
+                <h3 class="speaker_name">{{speaker.name}}</h3>
+                <p class="speaker_profession">{{speaker.profession}}</p>
+                <img class="speaker_image" src={{speaker.image}} alt="Image of a speaker">
+                <p class="speaker_bio">{{speaker.bio}}</p>
+            </a>
+            <a href="/speakers" class="speaker_update">Update {{speaker.name}}</a>
+        </div>
+    </body>
+</html>

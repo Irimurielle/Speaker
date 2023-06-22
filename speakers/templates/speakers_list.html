@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to our Speakers page</title>
+    </head>
+    <body>
+        <div class="speakers_list_container">
+            <h1 class="container_heading">Speakers</h1>
+            <div class="speakers_list">
+                {%for speaker in speakers%}
+                <a href="/speakers/{{speaker.id}}" class="speaker">
+                    <h3 class="speaker_name">{{speaker.name}}</h3>
+                    <p class="speaker_profession">{{speaker.profession}}</p>
+                    <img class="speaker_image" src={{speaker.image}} alt="Image of a speaker">
+                    <p class="speaker_bio">{{speaker.bio}}</p>
+                </a>
+                {%endfor%}
+            </div>
+        </div>
+    </body>
+</html>
